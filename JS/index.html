@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body>
+    <div class="solar-system">
+        <div class="orbit orbit-mercury"></div>
+        <div class="orbit orbit-venus"></div>
+        <div class="orbit orbit-earth"></div>
+        <div class="orbit orbit-mars"></div>
+        <div class="orbit orbit-jupiter"></div>
+        <div class="orbit orbit-saturn"></div>
+        <div class="orbit orbit-uranus"></div>
+        <div class="orbit orbit-neptune"></div>
+
+        <div class="planet" id="mercury">
+            <a href="javascript:void(0);" onclick="openPopup('mercury')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/mercury.png" alt="mercury">
+            </a>
+        </div>
+        <div class="planet" id="venus">
+            <a href="javascript:void(0);" onclick="openPopup('venus')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/venus.png" alt="venus">
+            </a>
+        </div>
+        <div class="planet" id="earth">
+            <a href="javascript:void(0);" onclick="openPopup('earth')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/earth.png" alt="earth">
+            </a>
+        </div>
+        <div class="planet" id="mars">
+            <a href="javascript:void(0);" onclick="openPopup('mars')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/mars.png" alt="mars">
+            </a>
+        </div>
+         <div class="planet" id="jupiter">
+            <a href="javascript:void(0);" onclick="openPopup('jupiter')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/jupiter.png" alt="jupiter">
+            </a>
+        </div>
+         <div class="planet" id="saturn">
+            <a href="javascript:void(0);" onclick="openPopup('saturn')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/saturn.png" alt="saturn">
+            </a>
+        </div>
+         <div class="planet" id="uranus">
+            <a href="javascript:void(0);" onclick="openPopup('uranus')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/uranus.png" alt="uranus">
+            </a>
+        </div>
+         <div class="planet" id="neptune">
+            <a href="javascript:void(0);" onclick="openPopup('neptune')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Neptune_cutout.png/1200px-Neptune_cutout.png" alt="neptune">
+            </a>
+        </div>
+         <div class="planet" id="sun">
+            <a href="javascript:void(0);" onclick="openPopup('sun')">
+                <img src="https://terminalroot.com.br/assets/img/dev-web/solarsystem/sun.png" alt="sun">
+            </a>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="video-container">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
